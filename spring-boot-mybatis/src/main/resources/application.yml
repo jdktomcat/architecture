@@ -28,4 +28,4 @@ spring:
 # 整合mybatis
 mybatis:
   #  typeAliasesPackage: com.neuedu.entity
-  mapper-locations: classpath*:com/neuedu/boot/mapper/*.xml
+  mapper-locations: classpath*:com/jdktomcat/spring/boot/mybatis/mapper/*.xml
