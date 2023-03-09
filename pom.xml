@@ -14,7 +14,6 @@
   <name>architecture</name>
   <modules>
     <module>spring-boot-dubbo</module>
-    <module>spring-boot-dubbo/spring-boot-dubbo-customer</module>
   </modules>
   <packaging>pom</packaging>
 
