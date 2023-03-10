@@ -8,16 +8,18 @@
     </resultMap>
 
     <insert id="insert" parameterType="com.jdktomcat.spring.boot.mybatis.mapper.entry.UserInfoDO">
+
     </insert>
 
     <select id="getById" resultMap="BaseResultMap" parameterType="java.lang.Long">
+        select * from user_info where id = #{id,jdbcType=BIGINT}
     </select>
 
     <update id="update" parameterType="com.jdktomcat.spring.boot.mybatis.mapper.entry.UserInfoDO">
     </update>
 
     <delete id="delete">
-        delete from user_info where id =  #{id};
+        delete from user_info where id =  #{id,jdbcType=BIGINT}
     </delete>
 
 </mapper>
