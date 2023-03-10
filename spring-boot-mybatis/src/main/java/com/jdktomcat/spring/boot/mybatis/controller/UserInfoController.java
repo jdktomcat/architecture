@@ -17,7 +17,7 @@ public class UserInfoController {
 
     @ResponseBody
     @RequestMapping("/get")
-    public UserInfoDO sayHello(long id) {
+    public UserInfoDO sayHello(Long id) {
         return userInfoService.getById(id);
     }
 

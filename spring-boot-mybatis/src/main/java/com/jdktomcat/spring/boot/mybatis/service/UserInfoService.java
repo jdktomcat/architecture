@@ -8,6 +8,6 @@ import com.jdktomcat.spring.boot.mybatis.mapper.entry.UserInfoDO;
 public interface UserInfoService {
 
 
-    UserInfoDO getById(long id);
+    UserInfoDO getById(Long id);
 
 }

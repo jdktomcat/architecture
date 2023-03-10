@@ -13,7 +13,7 @@ public class UserInfoServiceImpl implements UserInfoService {
     private UserInfoMapper userInfoMapper;
 
     @Override
-    public UserInfoDO getById(long id) {
+    public UserInfoDO getById(Long id) {
         return userInfoMapper.getById(id);
     }
 }

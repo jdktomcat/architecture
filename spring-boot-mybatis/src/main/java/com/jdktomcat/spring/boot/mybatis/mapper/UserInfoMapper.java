@@ -8,7 +8,7 @@ public interface UserInfoMapper {
 
     int insert(UserInfoDO userInfoDO);
 
-    UserInfoDO getById(long id);
+    UserInfoDO getById(Long id);
 
     int update(UserInfoDO userInfoDO);
 
