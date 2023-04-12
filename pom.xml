@@ -16,6 +16,7 @@
     <module>spring-boot-dubbo</module>
       <module>spring-boot-mybatis</module>
       <module>high-performance-cache</module>
+      <module>spring-boot-caffeine</module>
   </modules>
   <packaging>pom</packaging>
 
