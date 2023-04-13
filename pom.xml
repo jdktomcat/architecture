@@ -17,6 +17,7 @@
       <module>spring-boot-mybatis</module>
       <module>high-performance-cache</module>
       <module>spring-boot-caffeine</module>
+      <module>spring-boot-spock</module>
   </modules>
   <packaging>pom</packaging>
 
