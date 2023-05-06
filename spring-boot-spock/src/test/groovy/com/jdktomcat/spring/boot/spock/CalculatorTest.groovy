@@ -7,11 +7,12 @@ import spock.lang.Unroll
 @Title("计算器测试类")
 class CalculatorTest extends Specification {
 
-    def calculator = new Calculator()
+    def cacheService = Mock(CacheService)
 
-    def setup() {
+    def calculator  = new Calculator(cacheService)
+
+    void setup() {
     }
-
     def cleanup() {
     }
 
@@ -44,5 +45,17 @@ class CalculatorTest extends Specification {
         1 | 2 | 3
         2 | 3 | 5
         10 | 2 | 12
+    }
+
+
+    def  "is username equal to logged in username"() {
+        // stub 打桩
+        cacheService.getUserName(*_) >> "Richard"
+
+        when:
+        def result = calculator.isLoggedInUser("Richard")
+
+        then:
+        result
     }
 }

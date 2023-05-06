@@ -1,5 +1,9 @@
 package com.jdktomcat.spring.boot.spock;
 
+import com.jdktomcat.spring.boot.spock.service.CacheService;
+
+import java.util.Objects;
+
 /**
  * 测试计算类
  */
@@ -12,4 +16,13 @@ public class Calculator {
         return a + b;
     }
 
+    private CacheService cacheService;
+
+    public Calculator(CacheService cacheService) {
+        this.cacheService = cacheService;
+    }
+
+    public boolean isLoggedInUser(String userName) {
+        return Objects.equals(userName, cacheService.getUserName());
+    }
 }
